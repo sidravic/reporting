@@ -1,0 +1,46 @@
+development:
+  sessions:
+    default:
+      database: shipsticks_api
+      hosts:
+        - localhost:27017
+      options:
+        safe: true
+
+
+test:
+    host: localhost
+    database: shipsticks_test
+
+staging:
+  hosts:
+        - - 10.0.3.236
+          - 27017
+        - - 10.0.3.237
+          - 27017
+        - - 10.0.3.238
+          - 27017
+  database: shipsticks_staging
+  read_secondary: false
+
+qa:
+    hosts:
+        - - 172.16.21.14
+          - 27017
+        - - 172.16.21.15
+          - 27017
+        - - 172.16.21.16
+          - 27017
+    database: shipsticks_qa
+    read_secondary: false
+
+production:
+    hosts:
+        - - 10.0.3.241
+          - 27017
+        - - 10.0.3.243
+          - 27017
+        - - 10.0.3.244
+          - 27017
+    database: shipsticks_production
+    read_secondary: false

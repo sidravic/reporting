@@ -1,0 +1,3 @@
+class Summary
+
+end
